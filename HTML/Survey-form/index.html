@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Customer Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Customer Survey Form</h1>
+<div id="form-outer">
+
+  <form id="survey-form" method="">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="fname-label" for="fname"><b>First Name </b> </label> <br>
+        <input autofocus type="text" name="fname" id="fname" class="input-field" required>
+      </div>
+      <div class="rightTab">
+
+        <div class="labels">
+          <label id="lname-label" for="lname"><b>Last Name</b> </label> <br>
+          <input autofocus type="text" name="lname" id="lname" class="input-field" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label id="dob-label" for="dob"><b>D.O.B</b> </label> <br>
+        <input type="date" name="dob" id="iddob" class="input-field" required>
+      </div>
+      <div class="rightTab">
+        <div class="labels">
+          <label for="country"><b>Country </b></label> <br>
+          <select id="dropdown" name="country" class="dropdown">
+            <option disabled value>Select an option</option>
+            <option value="IND">India</option>
+            <option value="PAK">Pakistan</option>
+            <option value="UK">UK</option>
+            <option value="USA">USA</option>
+            <option value="SA">South Africa</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="gender"><b>Gender</b> </label>
+        <br>
+        <label><input name="radio-buttons" value="male" type="radio" class="userRatings">Male</label>
+        <label><input name="radio-buttons" value="female" type="radio" class="userRatings">Female</label>
+        <label><input name="radio-buttons" value="others" type="radio" class="userRatings">Others</label>
+
+      </div>
+      <div class="rightTab">
+        <div class="labels">
+          <label id="pname-label" for="pname"><b>Profession </b></label>
+        </div>
+        <input autofocus type="text" name="pname" id="pname" class="input-field" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="email"><b>E-Mail</b> </label> <br>
+        <input autofocus type="email" name="email" id="email" class="input-field" required>
+      </div>
+      <div class="rightTab">
+
+        <div class="labels">
+          <label for="phone"><b>Mobile number</b></label><br>
+          <input type="tel" id="phone" name="phone" class="input-field" autofocus required>
+
+        </div>
+      </div>
+    </div>
+
+    <button id="submit" type="button" onclick="formSubmit()">Submit</button>
+    <button id="resetb" type="button" onclick="formReset()">Reset</button>
+  </form>
+</div>
+
+<div id="popup">
+  <h2>Results</h2>
+  <div id="popupDisplay"></div>
+  <button onclick="closePopup()">Close</button>
+</div>
+
+<h4> &copy; 2018 Customer Survey Form. All Rights Reserved | Designed by <span id="copy"> Vishal </span></h4>
+<script src="script.js"></script>
+
+</body>
+</html>
